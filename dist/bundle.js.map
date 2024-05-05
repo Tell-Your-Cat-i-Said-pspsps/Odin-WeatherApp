@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"AAAYA,SAASC,cAAc","sources":["webpack://template-webpack/./src/index.js"],"sourcesContent":["const doc = document.createElement(\"div\");\n"],"names":["document","createElement"],"sourceRoot":""}

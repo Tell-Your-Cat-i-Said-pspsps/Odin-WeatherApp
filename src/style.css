@@ -1,0 +1,51 @@
+.svgImg {
+  height: 20px;
+  width: auto;
+}
+.container {
+  display: grid;
+  grid-template-rows: auto auto 2fr 1fr;
+  gap: 16px;
+}
+.navBar,
+form,
+button {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.navBar button {
+  background-color: transparent;
+  border: none;
+}
+.currentWeather {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+.currentLocation {
+  grid-column: 1 / span 3;
+  font-size: 32px;
+  text-align: center;
+}
+.currentTempDisplay {
+  font-size: 48px;
+  font-weight: 500;
+}
+.currentTempOption {
+  display: flex;
+  flex-direction: column;
+}
+.currentTempOption input {
+  display: none;
+}
+.currentTempOption input + label {
+  opacity: 50%;
+}
+.currentTempOption input:checked + label {
+  opacity: 100%;
+}
