@@ -31,7 +31,7 @@ radio_f.addEventListener("change", () => {
 async function getWeatherForcast() {
   try {
     const forcast = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=c1dc1978a27244b799b222805242704&q=${currentLocation ? currentLocation : "Cairo"}&days=6&aqi=yes&alerts=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=c1dc1978a27244b799b222805242704&q=${currentLocation ? currentLocation : "Cairo"}&days=6&aqi=yes&alerts=no`,
     );
     if (!forcast.ok) {
       throw new Error("Couldn't Fetch Resourse");
